@@ -111,7 +111,7 @@ const Home: React.FC = () => {
                     }
                 >
                     {recipes?.map((recipe) => (
-                        <Fragment key={recipe.name}>
+                        <Fragment key={recipe._id}>
                             <RecipeCard recipe={recipe} />
                         </Fragment>
                     ))}
