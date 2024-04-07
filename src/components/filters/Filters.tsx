@@ -33,8 +33,8 @@ const Filters = ({ filters, setFilters }: Props) => {
     };
 
     return (
-        <div className="mb-5">
-            <Menubar className="flex flex-col items-start w-full gap-4 p-0 mt-4 bg-white border-none divide-x sm:flex-row">
+        <div className="h-full mb-5 ">
+            <Menubar className="flex flex-col items-start w-full gap-4 p-0 mt-4 h-[160px] sm:h-10 border-none divide-x sm:flex-row">
                 <FilterMenu
                     title="Difficulty"
                     icon={<Ruler width={16} height={16} />}
@@ -71,12 +71,12 @@ const Filters = ({ filters, setFilters }: Props) => {
                     <div className="flex flex-row gap-2 mt-4" key={category}>
                         {values.map((value: string) => (
                             <Badge
-                                className="relative pl-2 pr-4 rounded-full shadow bg-slate-100"
+                                className="relative pl-2 pr-4 rounded-full shadow "
                                 key={value}
                             >
                                 {value}
                                 <div
-                                    className="absolute p-1 transition duration-300 ease-in-out bg-white rounded-full cursor-pointer -top-2 -right-2 hover:bg-primary-600"
+                                    className="absolute p-1 transition duration-300 ease-in-out rounded-full cursor-pointer -top-2 -right-2 hover:bg-primary-600"
                                     onClick={() =>
                                         toggleFilter(
                                             category as keyof Filters,

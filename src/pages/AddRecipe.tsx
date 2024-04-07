@@ -172,7 +172,7 @@ const AddRecipe = () => {
         }
     };
     return (
-        <div>
+        <div className="max-w-[600px] mx-auto">
             <div>
                 <h1 className="px-10 pt-8 pb-2 text-2xl font-semibold border-b">
                     Add Recipe

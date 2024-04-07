@@ -43,14 +43,14 @@ const Recipe = () => {
             </div>
         );
     return (
-        <div className="flex flex-col px-10 py-10 space-y-6">
-            <div className="flex space-x-4">
+        <div className="flex flex-col px-4 py-10 space-y-6 sm:px-10">
+            <div className="flex flex-col space-y-4 sm:space-x-4 sm:flex-row">
                 <img
-                    className="w-1/2 h-auto"
+                    className="sm:w-1/2 sm:max-w-[400px] h-auto"
                     src={recipe?.image}
                     alt={recipe?.name}
                 />
-                <div className="w-1/2 space-y-2">
+                <div className="space-y-2 sm:w-1/2">
                     <h1 className="text-2xl font-bold">{recipe?.name}</h1>
                     <p className="text-lg">{recipe?.cuisine}</p>
                     <p className="text-lg">{recipe?.mealType}</p>
